@@ -44,6 +44,9 @@ func main() {
 	//spm js
 	http.Handle("/js/", http.StripPrefix("/js/", http.FileServer(http.Dir("js"))))
 
+	//spm images
+	http.Handle("/images/", http.StripPrefix("/image/", http.FileServer(http.Dir("images"))))
+
 	// About page route
 	http.HandleFunc("/about", AboutHandler)
 
