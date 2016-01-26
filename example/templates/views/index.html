@@ -1,0 +1,16 @@
+{{ define "head" }}
+	{{template "partials/css.html" . }}
+{{ end }}
+
+{{ define "body" }}
+	<h2>Main Page</h2>
+	<p>A simple index page</p>
+{{ end }}
+
+{{ define "footer" }}
+	
+	<footer>
+		Index Page Footer
+		{{template "partials/scripts.html" . }}
+	</footer>
+{{ end }}
